@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        .justificar {
+            text-align: justify;
+        }
+    </style>
+    <style>
+        .recuo {
+            text-indent: 20px; /* Define um recuo de 20 pixels para a primeira linha */
+            text-align: justify;
+        }
+    </style>
+    <style>
+        .maiorrecuo {
+            text-indent: 40px; /* Define um recuo de 40 pixels para a primeira linha */
+            text-align: justify;
+        }
+    </style>
+    <style>
+        .container {
+          width: 100%;
+          overflow: hidden; /* Limpa o float */
+        }
+        .texto {
+          text-align: justify;
+          margin-right: 150px; /* Ajuste a margem para evitar a sobreposição da imagem */
+        }
+        .imagem {
+          float: right;
+          width: 150px; /* Ajuste a largura da imagem conforme necessário */
+          height: auto; /* Garante que a proporção da imagem seja mantida */
+          margin-left: 10px; /* Adiciona um espaço entre a imagem e o texto */
+        }
+      </style>
+
+</head>
+<body>
+    <!-- Escrever todo o conteúdo aqui -->
+    <h1 id="inicio">Explorando a Web com HTML e Tags</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#html">HTML</a></li>
+        <ul>
+            <li><a href="#definição">Definição</a></li>
+            <li><a href="#história">História</a></li>
+            <li><a href="#tags">O que são Tags?</a></li>
+            <li><a href="#principais-tags">Principais Tags</a></li>
+            <ul>
+                <li><a href="#p">&lt;p&gt;</a></li>
+                <li><a href="#h">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;...&lt;h6&gt;</a></li>
+                <li><a href="#small">&lt;small&gt;</a></li>
+                <li><a href="#strong">&lt;strong&gt;</a></li>
+                <li><a href="#i">&lt;i&gt;</a></li>
+                <li><a href="#u">&lt;u&gt;</a></li>
+                <li><a href="#mark">&lt;mark&gt;</a></li>
+                <li><a href="#li">&lt;li&gt;</a></li>
+                <li><a href="#ol">&lt;ol&gt;</a></li>
+                <li><a href="#ul">&lt;ul&gt;</a></li>
+                <li><a href="#a">&lt;a&gt;</a></li>
+                <li><a href="#hr">&lt;hr&gt;</a></li>
+                <li><a href="#sub">&lt;sub&gt;</a></li>
+                <li><a href="#sup">&lt;sup&gt;</a></li>
+                <li><a href="#blockquote">&lt;blockquote&gt;</a></li>
+                <li><a href="#font">&lt;font&gt;</a></li>
+                <li><a href="#del">&lt;del&gt;</a></li>
+                <li><a href="#abbr">&lt;abbr&gt;</a></li>
+            </ul>
+        </ul>
+        <li><a href="referencias">Referências</a></li>
+    </ul>
+    </div>
+
+    <h2 id="html">HTML</h2>
+    <h3 id="definição">Definição</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <div class="justificar">
+        <p>
+            HTML (Hypertext Markup Language) é uma linguagem de marcação usada para criar e estruturar documentos na World Wide Web (WWW). Ele define a estrutura e o layout de uma página da web, permitindo a inclusão de texto, imagens, links e outros elementos multimídia. Ademais, a linguagem consiste em uma série de elementos (ou tags) que são interpretados pelos navegadores da web para exibir o conteúdo de forma formatada e organizada. Esses elementos podem ser usados para definir parágrafos, cabeçalhos, listas, formulários e muito mais, proporcionando uma maneira padronizada de apresentar informações na internet.
+        </p>
+        <a><img src="https://i.pinimg.com/564x/47/84/d5/4784d5984d7397871bc98714c07865c6.jpg" width="200"></a>
+    </div>
+
+    <h3 id="história">História</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <div class="justificar">
+        <p>
+            A história do HTML começa nos anos 1980 e início dos anos 1990, quando Tim Berners-Lee propôs a ideia da World Wide Web no CERN (Organização Europeia para a Pesquisa Nuclear). Tim propôs a ideia de um sistema de hipertexto que permitiria aos pesquisadores compartilhar e acessar documentos facilmente através de links. Anos mais tarde, em 1989, escreveu uma proposta intitulada "Information Management: A Proposal", onde delineava os conceitos de hipertexto e o que se tornaria a World Wide Web (WWW). Ele imaginou um sistema distribuído de hipertexto baseado na internet, no qual documentos poderiam ser vinculados entre si por meio de links. Um ano depois, Berners-Lee desenvolveu o conceito de HTML, definindo as especificações básicas do HTML, que incluíam um conjunto inicial de tags para criar documentos hipertexto. Essas tags permitiam a inclusão de links, imagens e texto formatado. No mesmo ano, fora criado o primeiro navegador web: WorldWibeWed - também conhecido como Nexus.  Também criado por Bernes-Lee, o navegador permitia a visualização de páginas web básicas, mas também atuava como editor, permitindo que os usuários criassem conteúdo diretamente na web. Em 1993, Marc Andreessen e Eric Bina desenvolveram o navegador Mosaic na Universidade de Illinois, que foi o primeiro navegador a popularizar a web para o público em geral. Isso levou a um aumento significativo no uso e desenvolvimento de páginas da web, impulsionando ainda mais a adoção do HTML.
+        </p>
+        <p>
+            A primeira versão oficial do HTML, conhecida como HTML 1.0, foi lançada em 1993. Ela continha um conjunto limitado de tags, como &lt;h1&gt; para cabeçalhos, &lt;p&gt; para parágrafos e &lt;a&gt; para links. Nos anos seguintes, o HTML evoluiu rapidamente com o lançamento de novas versões, cada uma introduzindo recursos adicionais. A versão atual é o HTML5, o qual foi finalizado como a quinta revisão principal da especificação HTML em 2014. Ele trouxe uma série de novos recursos e melhorias, como elementos de mídia, gráficos vetoriais escaláveis (SVG) e suporte a semântica avançada para tornar o conteúdo mais acessível aos motores de busca e dispositivos assistivos.    
+        </p>
+        <a><img src="https://i.pinimg.com/564x/f9/d0/31/f9d031d4e00f593292a2b926d3efe637.jpg" width="400"></a>
+        <p><small><i>(Tim Berners-Lee acessando a World Wide Web (WWW))</i></small></p>
+    </div>
+
+    <h3 id="tags">O que são Tags?</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <div class="justificar">
+    <p>Cada arquivo HTML contém marcadores, conhecidos como tags, que são expressões delimitadas por parênteses angulares (< e >) e desempenham o papel de instruções de formatação na linguagem. Um elemento HTML consiste em um nome de tag, atributos, valores e possíveis elementos ou texto dentro dele. Os atributos são usados para ajustar as configurações padrão dos elementos, enquanto os valores determinam como esses ajustes são aplicados.</p>
+    <p>Elementos HTML podem ser categorizados em dois tipos principais com base na presença de conteúdo dentro deles: elementos com filhos e elementos sem filhos.</p>
+    </div>
+    <p><strong>- Elementos com filhos</strong>
+        <ul>
+            <li>Esses são elementos que têm outros elementos HTML ou texto dentro deles.</li>   
+            <li>Eles agem como contêineres para agrupar e organizar conteúdo.</li> 
+            <li>Exemplos incluem &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;, entre outros.</li>
+            <li>Podem conter qualquer número de elementos filhos, incluindo outros elementos com ou sem filhos.</li>
+        </ul>
+    <p><strong>- Elementos sem filhos</strong></p>
+        <ul>
+            <li>Estes são elementos que não têm nenhum conteúdo dentro deles.</li>
+            <li>Eles são usados principalmente para adicionar funcionalidades específicas ou efeitos visuais à página.</li>
+            <li>Exemplos incluem &lt;img&gt;, &lt;hr&gt;, &lt;br&gt;, &lt;input&gt;, entre outros.</li>
+            <li> Eles são chamados de "vazios" ou "autofechados" porque não têm conteúdo entre uma tag de abertura e uma tag de fechamento; eles terminam com uma barra antes do fechamento angular, como &lt;/br&gt; ou &lt;/img&gt;.</li>
+        </ul>
+    <p>Exemplo:</p>
+
+    <p>&lt;p&gt;Este é um exemplo de um elemento HTML simples sem filhos, como o elemento &lt;hr /&gt; que representa uma linha horizontal.&lt;/p&gt;</p>
+    <br>
+    <p>&lt;div&gt;</p>
+        <div class="recuo">
+        &lt;p&gt;Este é um exemplo de um elemento HTML com filhos. Aqui está um parágrafo dentro de uma div.&lt;/p&gt;
+        <p>&lt;u&gt;</p>
+        </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+                <p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+                <p>&lt;li&gt;Item 3&lt;/li&gt;</p>
+            </div>
+        <div class="recuo">
+        <p>&lt;/u&gt;</p>
+        </div>
+    <p>&lt;/div&gt;</p>
+    O primeiro elemento é um parágrafo (&lt;p&gt;) que contém um texto explicativo. Este é um exemplo de um elemento HTML sem filhos.
+    <br>
+    <br>
+    O segundo elemento é uma (&lt;div&gt;) que contém um cabeçalho (&lt;h2&gt;), um parágrafo (&lt;p&gt;) e uma lista não ordenada (&lt;ul&gt;) com três itens de lista (&lt;li&gt;). Este é um exemplo de um elemento HTML com filhos.
+    <p>Essa distinção é importante porque afeta como os elementos são tratados pelo navegador e como eles afetam a estrutura e o layout da página HTML. Elementos com filhos influenciam a estrutura e o conteúdo da página, enquanto elementos sem filhos geralmente são usados para adicionar funcionalidades específicas ou elementos visuais à página.</p>
+    
+    <h3 id="principais-tags">Principais Tags</h3>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <ul>
+        <li><strong id="p">&lt;p&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Uma das tags mais básicas e amplamente utilizadas para estruturar o conteúdo textual em uma página web. Cada parágrafo definido pela tag &lt;p&gt; é separado visualmente dos parágrafos adjacentes por espaços em branco.
+            <br>
+            <p>Exemplo:</p> 
+                <p>&lt;p&gt;Primeiro parágrafo&lt;/p&gt;</p>
+                <p>Primeiro parágrafo</p>
+        </p>
+
+        <li><strong id="h">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; ... &lt;h6&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            São utilizadas para definir cabeçalhos de diferentes níveis de importância em uma página web. Cada número representa um nível de hierarquia, sendo &lt;h1&gt; o cabeçalho mais importante e &lt;h6&gt; o menos importante.
+            <p>Exemplo:</p> 
+            <p>&lt;h1&gt;Título Principal&lt;/h1&gt;</p>
+            <p>&lt;h2&gt;Subtítulo Importante&lt;h2&gt;</p>
+            <p>&lt;h3&gt;Subtítulo Menos Importante&lt;h3&gt;</p>
+            <h1>Título Principal</h1>
+            <h2>Subtítulo Importante</h2>
+            <h3>Subtítulo Menos Importante</h3>
+            &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e &lt;h6&gt; são tags destinadas para subtítulos de menor importância  sendo utilizadas como subseções dentro de &lt;h1&gt; e &lt;h2&gt;</strong>.
+        </p>
+
+        <li><strong id="small">&lt;small&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Utilizada para definir texto com um tamanho de fonte menor do que o texto circundante. É frequentemente usada para exibir texto de nota de rodapé, legenda ou informações auxiliares que são menos importantes que o texto principal da página.
+        </p>
+        <p>Exemplo:</p>
+        <p>Este é um parágrafo de texto com uma &lt;small&gt;nota de rodapé&lt;/small&gt; em tamanho menor.</p>
+        <p>Este é um parágrafo de texto com uma <small>nota de rodapé</small> em tamanho menor.</p>
+
+        <li><strong id="strong">&lt;strong&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Utilizada para indicar que o texto dentro dela deve ser enfatizado visualmente, geralmente exibindo-o em negrito. Ela é usada para destacar parte do texto que é de grande importância, ênfase ou relevância.
+            <p>Exemplo:</p>
+            <p>Este é um parágrafo com um texto &lt;strong&gt;fortemente&lt;/strong&gt; enfatizado</p>
+            <p>Este é um parágrafo com um texto <strong>fortemente</strong> enfatizado.</p>
+        </p>
+        
+        <li><strong id="i">&lt;i&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Utilizada para enfatizar o texto, indicando que ele deve ser exibido em itálico. No entanto, a partir do HTML5, a tag &lt;i&gt; é considerada obsoleta para esse propósito e é recomendado o uso da tag &lt;em&gt;(ênfase) para textos em itálico com significado enfático.
+            <p>Exemplo do uso da tag &lt;i&gt;:</p>      
+            <p>&lt;i&gt;Este texto será exibido em itálico.&lt;i&gt;</p>  
+            <p><i>Este texto será exibido em itálico.</i></p> 
+            <br> 
+            É importante ressaltar que, embora a tag &lt;i&gt; ainda seja suportada pelos navegadores, ela é considerada obsoleta para fins semânticos. Se o texto em itálico tiver um significado semântico específico, é preferível usar a tag &lt;em&gt; para fornecer ênfase ao conteúdo.
+            <p>Exemplo de uso da tag &lt;em&gt; para ênfase:</p>
+            <p>&lt;em&gt;Este texto enfatizado será exibido em itálico.&lt;/em&gt;</p>
+            <p><em>Este texto enfatizado será exibido em itálico.</em></p>
+            <br>
+            No HTML5, a tag &lt;em&gt; é usada para representar ênfase, e os navegadores geralmente renderizam o texto enfatizado em itálico por padrão.             
+        </p>
+
+        <li><strong id="u">&lt;u&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Utilizada para sublinhar o texto que está dentro dela. Ela é frequentemente usada para indicar que o texto é um link ou para destacar palavras-chave, termos técnicos ou qualquer outra informação que necessite de ênfase visual adicional através do sublinhado.
+            <p>Exemplo:</p>
+            <p>Este é um exemplo de texto com uma palavra &lt;u&gt;sublinhada&lt;/u&gt;.</p>
+            <p>Este é um exemplo de texto com uma palavra <u>sublinhada</u>.</p>
+        </p>
+
+        <li><strong id="mark">&lt;mark&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Utilizada para destacar uma palavra ou frase importante no decorrer de um texto. O texto  marcado pela tag normalmente é destacado pela cor amarela.
+            <p>Exemplo:</p> 
+            <p>&lt;mark&gt;Texto importante&lt;/mark&gt;</p>
+            <p><mark>Texto importante</mark></p>
+        </p>
+
+        <li><strong id="li">&lt;li&gt;</strong></li>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Usada para definir um item em uma lista, seja ela ordenada (&lt;ol&gt;) ou não ordenada (&lt;ul&gt;). Essa tag é essencial para estruturar listas de itens em uma página da web.
+            <p>Exemplo de lista ordenada:</p>
+            <div class="recuo">
+                &lt;ol&gt;
+            </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+                </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+                </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 3&lt;/li&gt;</p>
+                </div>
+            <div class="recuo">
+                &lt;/ol&gt;
+            </div>
+            <br>
+            <br>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li> 
+            </ol>
+            <p>Exemplo de lista não ordenada:</p>
+            <div class="recuo">
+                &lt;ul&gt;
+            </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+                </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+                </div>
+                <div class="maiorrecuo">
+                    <p>&lt;li&gt;Item 3&lt;/li&gt;</p>
+                </div>
+            <div class="recuo">
+                &lt;/ul&gt;
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </p>
+
+    <li><strong id="ol">&lt;ol&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar listas ordenadas, ou seja, listas nas quais cada item é numerado sequencialmente.
+        <p>Exemplo:</p>
+        <div class="recuo">
+            &lt;ol&gt;
+        </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+            </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+            </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 3&lt;/li&gt;</p>
+            </div>
+        <div class="recuo">
+            &lt;/ol&gt;
+        </div>
+        <br>
+        <br>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li> 
+        </ol>
+    </p>
+
+    <li><strong id="ul">&lt;ul&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar listas não ordenadas, ou seja, listas nas quais os itens não são numerados sequencialmente, mas geralmente são marcados com um bullet (como um ponto ou um círculo).
+        <p>Exemplo:</p>
+        <div class="recuo">
+            &lt;ul&gt;
+        </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 1&lt;/li&gt;</p>
+            </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 2&lt;/li&gt;</p>
+            </div>
+            <div class="maiorrecuo">
+                <p>&lt;li&gt;Item 3&lt;/li&gt;</p>
+            </div>
+        <div class="recuo">
+            &lt;/ul&gt;
+        </div>
+        <br>
+        <br>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </p>
+
+    <li><strong id="a">&lt;a&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar um hyperlink, ou seja, um link para outra página da web, arquivo, endereço de email, ou qualquer outro URL.
+        <p>Exemplo:</p>
+        <p>&lt;a&gt;href="https://www.example.com">Visite o site exemplo&lt;/a&gt;</p>
+        <p><a href="https://www.example.com">Visite o site exemplo</a></p>
+        Neste exemplo, o texto "Visite o site exemplo" é clicável e, quando clicado, o usuário será redirecionado para o URL especificado no atributo href.
+        <br>
+        <br>
+        <p>Também é possível criar links que abram em uma nova aba ou janela do navegador utilizando o atributo <strong>target="_blank"</strong>:</p>
+        <p>&lt;a&gt; href="https://www.example.com" target="_blank">Visite o site exemplo&lt;a&gt;</p>
+        <p><a href="https://www.example.com" target="_blank">Visite o site exemplo</a></p>
+        Aqui, o link abrirá em uma nova aba ou janela do navegador quando clicado.
+        <br>
+        <br>
+        <p>Além disso, você pode usar imagens como links, envolvendo a tag &lt;img&gt; dentro da tag &lt;a&gt;:</p>
+        <p>
+            &lt;a&gt; 
+                <div class="recuo">
+                    <p>&lt;img&gt; src="https://i.pinimg.com/564x/e1/10/1d/e1101dc5fa86bcfe42b5e6f00d4499ef.jpg" width="200" alt="Descrição da imagem"></p>
+                </div>
+            &lt;/a&gt; 
+        </p>
+        <p>
+            <a 
+                <p><img src="https://i.pinimg.com/564x/e1/10/1d/e1101dc5fa86bcfe42b5e6f00d4499ef.jpg" width="200" alt="Descrição da imagem"></p>
+            </a>   
+        </p>
+    </p>
+
+    <li><strong id="hr">&lt;hr&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar uma linha horizontal, que é frequentemente usada para separar o conteúdo em seções visuais distintas.
+        <p>Exemplo:</p>
+        <p>Este é um parágrafo.</p>
+        &lt;hr&gt;
+        <p>Este é outro parágrafo.</p>
+        <br>
+        <p>Este é um parágrafo.</p>
+        <hr>
+        <p>Este é outro parágrafo.</p>
+    </p>
+
+    <li><strong id="sub">&lt;sub&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar texto subscrito, ou seja, texto que é posicionado abaixo da linha de base normal e é geralmente menor em tamanho.
+        <p>Exemplo:</p>
+        <p>H&lt;sub&gt;2&lt;/sub&gt;O</p>
+        <p>H<sub>2</sub>O</p>
+    </p>
+    <li><strong id="sup">&lt;sup&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para criar texto sobrescrito, ou seja, texto que é posicionado acima da linha de base normal e é geralmente menor em tamanho.
+        <p>Exemplo:</p>
+        <p>x&lt;sup&gt;2&lt;/sup&gt;</p>
+        <p>x<sup>2</sup></p>
+    </p>
+
+    <li><strong id="blockquote">&lt;blockquote&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para representar um bloco de texto citado de outra fonte, geralmente identificado com recuo e itálico.
+        <p>Exemplo:</p>
+        &lt;blockquote&gt;
+            <div class="recuo">
+                <p>&lt;i&gt;Este é um texto citado de outra fonte.&lt;/i&gt;</p>
+            </div>
+        &lt;/blockquote&gt;
+        <br>
+        <br>
+        <blockquote>
+        <p><i>Este é um texto citado de outra fonte.</i></p>
+        </blockquote>    
+    </p>
+
+    <li><strong id="font">&lt;font&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        A tag &lt;font&gt; era usada para definir o tamanho, a cor e a face da fonte do texto. No entanto, esta tag foi descontinuada no HTML5 e é considerada obsoleta. Em vez disso, recomenda-se o uso de CSS para estilizar o texto.
+        <p>Exemplo (não recomendado, pois a tag &lt;font&gt; está obsoleta): </p>
+        <p>&lt;font&gt; color="blue" size="3" face="Arial">Este é um texto estilizado com a tag font.&lt;/font&gt;</p>
+        <p><font color="blue" size="3" face="Arial">Este é um texto estilizado com a tag font.</font></p>
+    </p>
+
+    <li><strong id="del">&lt;del&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para representar texto que foi deletado ou removido de uma versão anterior de um documento. O texto dentro da tag <strong>&lt;del&gt;</strong> geralmente é exibido com uma linha através dele.
+        <p>Exemplo:</p>
+        <p>O texto &lt;del&gt;removido &lt;/del&gt; foi deletado.</p>
+        <p>O texto <del>removido</del> foi deletado.</p>
+    </p>
+
+    <li><strong id="abbr">&lt;abbr&gt;</strong></li>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Usada para definir uma abreviação ou um acrônimo e pode opcionalmente fornecer uma explicação do termo abreviado.
+        <p>Exemplo:</p>
+        <p>O &lt;abbr&gt; title="World Wide Web">WWW&lt;/abbr&gt; é uma parte fundamental da Internet.</p>
+        <p>O <abbr title="World Wide Web">WWW</abbr> é uma parte fundamental da Internet.</p>
+    </p>
+
+    <h2 id="referencias">Referências</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/HTML">https://en.wikipedia.org/wiki/HTML</a></li>
+        <li><a href="https://www.devmedia.com.br/html-basico-codigos-html/16596">https://www.devmedia.com.br/html-basico-codigos-html/16596</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a></li>
+        <li><a href="https://www.alura.com.br/artigos/html">https://www.alura.com.br/artigos/html</a></li>
+    </p>
+</body>
+
+</html>
